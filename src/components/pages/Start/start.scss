@@ -1,0 +1,48 @@
+@import "../../../styles/main.scss";
+
+.hero {
+  display: grid;
+  place-content: center;
+  color: $clr-light;
+  min-height: 70vh;
+  &__title {
+    @include H1font
+  }
+  &__subtitle {
+    display: grid;
+    gap: $base;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    h3 {
+      font-size: calc($base*2.25);
+      font-weight: 400;
+      line-height: calc($base*3);
+    }
+    &__line {
+      height: calc($base*1.5);
+      background-color: $clr-light;
+      
+    }
+  }
+}
+
+
+// /* < Frontendutvecklare /> */
+
+// position: absolute;
+// width: 393px;
+// height: 48px;
+// left: 747px;
+// top: 554px;
+
+// /* H2 */
+// font-family: 'Playfair Display';
+// font-style: normal;
+// font-weight: 400;
+// font-size: 36px;
+// line-height: 48px;
+// /* identical to box height */
+
+// /* Font light & card BG */
+// color: #F7F9FF;
+

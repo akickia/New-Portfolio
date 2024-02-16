@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+$font-family: "Playfair Display", serif;
+$font-clr--dark: #031619;
+$clr-turquoise: #23ABBC;
+$clr-light: #F7F9FF;
+$base: 1rem;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(180deg, #23ABBC 0%, #B3EFF7 100%);
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: $font-family;
+  font-size: $base;
+  line-height: calc($base*1.25);
+  main {
+    max-width: 1440px;
+    margin: auto
+  }
+}
+
+@mixin H1font {
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 128px;
+  letter-spacing: 0.08em;
+};
+
+.blob {
+  position: absolute;
+  z-index: -1;
+  &__top {
+    top: -$base;
+    right: -$base;
+  }
+  &__vector--left {
+    left: 0;
+    top: calc($base * 27)
+  }
+  &__blob--large {
+    right: 0;
+    top: calc($base * 97)
+  }
+
+}
+
+

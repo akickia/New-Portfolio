@@ -1,0 +1,25 @@
+@import "../../../styles/main.scss";
+
+header {
+  display: flex;
+  padding: calc($base*1.5) calc($base*2);
+  justify-content: space-between;
+  align-items: center;
+  nav {
+    a {
+      padding-inline: calc($base*2);
+      text-decoration: none;
+      color: $font-clr--dark;
+      font-weight: 600;
+    }
+    button {
+      background-color: $clr-turquoise;
+      color: $clr-light;
+      padding: calc($base*0.625) $base;
+      border: none;
+      border-radius: 6px;
+      font-family: $font-family;
+      font-weight: 600;
+    }
+  }
+}
