@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 $font-family: "Playfair Display", serif;
 $font-clr--dark: #031619;
 $clr-turquoise: #23ABBC;
 $clr-light: #F7F9FF;
+$clr-pink: #FFE5E5;
 $base: 1rem;
 
 
@@ -22,8 +23,9 @@ body {
   font-size: $base;
   line-height: calc($base*1.25);
   main {
-    max-width: 1440px;
-    margin: auto
+    max-width: 1040px;
+    margin: auto;
+    padding: $base;
   }
 }
 
@@ -33,6 +35,20 @@ body {
   line-height: 128px;
   letter-spacing: 0.08em;
 };
+
+@mixin CardHeader{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+@mixin BtnFont {
+  font-weight: 600;
+  font-size: $base;
+  line-height: 21px;
+  color: $font-clr--dark;
+  font-family: $font-family;
+}
 
 .blob {
   position: absolute;

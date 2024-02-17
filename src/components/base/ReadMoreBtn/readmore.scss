@@ -1,0 +1,23 @@
+@import "../../../styles/main.scss";
+
+.readmore {
+  @include BtnFont;
+  background-color: $clr-pink;
+  width: 60px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: auto;
+  margin-left: auto;
+  p {
+    transform: translateX(-25%);
+    white-space: nowrap;
+  }
+}
+
+
+
+

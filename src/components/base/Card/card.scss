@@ -1,0 +1,33 @@
+@import '../../../styles/main.scss';
+
+.card {
+  background-color: $clr-light;
+  padding: calc($base * 1.625);
+  grid-column: span 3;
+  margin-block: $base;
+  display: grid;  
+  gap: 32px;
+  .heading {
+    display: flex;
+    flex-direction: column;
+    gap: calc($base * 0.75);
+    @include CardHeader;
+    h5 {
+      font-family: 'Playfair Display';
+      font-style: italic;
+      font-weight: 400;
+      font-size: $base;
+    }
+  }
+  &__text {
+    font-family: 'Source Sans 3';
+    font-size: $base;
+    line-height: 150%;
+  }
+  
+  &__btns {
+   display: flex; 
+   justify-content: space-around;
+   gap: calc($base*1.625)
+  }
+}
