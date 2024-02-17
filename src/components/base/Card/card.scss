@@ -5,7 +5,7 @@
   padding: calc($base * 1.625);
   grid-column: span 3;
   margin-block: $base;
-  display: grid;  
+  display: grid;
   gap: 32px;
   .heading {
     display: flex;
@@ -24,10 +24,53 @@
     font-size: $base;
     line-height: 150%;
   }
-  
+
   &__btns {
-   display: flex; 
-   justify-content: space-around;
-   gap: calc($base*1.625)
+    display: flex;
+    justify-content: space-around;
+    gap: calc($base * 1.625);
   }
+}
+
+.card.large {
+  grid-column: span 4;
+  grid-row: span 4;
+}
+
+.card.small {
+  grid-column: span 2;
+  grid-row-start: 8;
+  justify-items: center;
+  text-align: center;
+}
+
+.card.huge {
+  grid-column: span 6;
+  justify-items: center;
+  text-align: center;
+  .content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+}
+
+.card {
+  .heading.line {
+    z-index: 1;
+    gap: 0;
+    h5 {
+      display: none;
+    }
+  }
+  .contact {
+    padding-bottom: 1rem
+  }
+}
+.card .heading.line::after {
+  content: '';
+  width: 13.4375rem;
+  height: $base;
+  background-color: $clr-pink;
+  z-index: -1;
+  transform: translateY(-75%);
 }

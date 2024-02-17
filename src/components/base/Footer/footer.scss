@@ -1,0 +1,33 @@
+@import "../../../styles/main.scss";
+
+.footer {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: $base;
+  justify-items: center;
+  padding: 2%;
+  &__home {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      text-decoration: none;
+      color: $clr-turquoise;
+  }
+  &__contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: calc($base);
+    * {
+      width: calc($base*2);
+      height: calc($base*2)
+    }
+  }
+  &__btns {
+    display: flex;
+    justify-content: space-around;
+    gap: calc($base*2);
+    max-width: 43.75rem;
+    width: 100%;
+    padding-block: calc($base*2);
+  }
+}

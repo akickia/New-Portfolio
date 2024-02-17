@@ -1,0 +1,11 @@
+@import "../../../styles/main.scss";
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: calc($base);
+  * {
+    width: calc($base*2);
+    height: calc($base*2)
+  }
+}
