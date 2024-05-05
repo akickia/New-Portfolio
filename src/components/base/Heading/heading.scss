@@ -1,0 +1,23 @@
+@import '../../../styles/variables.scss';
+
+.heading-container {
+  grid-column: span 4;
+  text-align: center;
+  padding: $base * 5 0 $base * 3 0;
+  .heading {
+    @include H2font;
+    color: $clr-light;
+  }
+  .subtitle__line {
+    height: calc($base * 1.5);
+    background-color: $clr-pink;
+  }
+}
+
+.long {
+  grid-column: span 6;
+}
+
+.short {
+  grid-column: span 3;
+}

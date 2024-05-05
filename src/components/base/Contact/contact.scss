@@ -1,11 +1,24 @@
-@import "../../../styles/main.scss";
+@import '../../../styles/variables.scss';
 
 .contact {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: calc($base);
   * {
-    width: calc($base*2);
-    height: calc($base*2)
+    width: calc($base * 2);
+    height: calc($base * 2);
+  }
+  *:hover {
+    color: $clr-light;
+  }
+}
+.contact.vertical {
+  grid-template-columns: 1fr;
+  align-content: center;
+  justify-items: center;
+  * {
+    color: $clr-pink;
+    width: calc($base * 4);
+    height: calc($base * 4);
   }
 }

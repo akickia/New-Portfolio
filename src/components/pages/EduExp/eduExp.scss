@@ -1,0 +1,56 @@
+@import '../../../styles/variables.scss';
+
+.edu-exp {
+  .content-top {
+    .card {
+      &:nth-of-type(2),
+      &:nth-of-type(3) {
+        max-width: 70%;
+        margin: $base auto;
+      }
+      &:nth-of-type(3) {
+        grid-column: 1 / 4;
+        grid-row: 4 / 8;
+      }
+
+      &:nth-of-type(4) {
+        grid-row: 3 / 6;
+        grid-column: 4 / 7;
+      }
+      &:nth-of-type(5) {
+        grid-row: 6 / 9;
+        grid-column: 4 / 7;
+      }
+    }
+  }
+  .content-bottom {
+    .card:nth-of-type(3) {
+      grid-column: 2 / 5;
+    }
+  }
+  .doodle {
+    width: 100%;
+  }
+  .special {
+    grid-column: span 6;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    button {
+      grid-column: span 1;
+      margin: auto;
+      background-color: $clr-pink;
+      padding: calc($base/2) $base;
+      border: none;
+      box-shadow: 1px 1px 5px $font-clr--dark;
+      font-family: $font-family;
+      font-weight: 700;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .edu-exp .special {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}

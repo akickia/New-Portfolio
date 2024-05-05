@@ -1,12 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-
-$font-family: "Playfair Display", serif;
-$font-clr--dark: #031619;
-$clr-turquoise: #23ABBC;
-$clr-light: #F7F9FF;
-$clr-pink: #FFE5E5;
-$base: 1rem;
-
+@import './variables.scss';
 
 * {
   box-sizing: border-box;
@@ -15,39 +7,22 @@ $base: 1rem;
 }
 
 body {
-  background: linear-gradient(180deg, #23ABBC 0%, #B3EFF7 100%);
+  background: linear-gradient(180deg, #23abbc 0%, #b3eff7 100%);
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;
   font-family: $font-family;
   font-size: $base;
-  line-height: calc($base*1.25);
+  line-height: calc($base * 1.25);
   main {
-    max-width: 1040px;
-    margin: auto;
-    padding: $base;
+    .content {
+      max-width: 1040px;
+      margin: auto;
+      padding: $base;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
-}
-
-@mixin H1font {
-  font-weight: 400;
-  font-size: 96px;
-  line-height: 128px;
-  letter-spacing: 0.08em;
-};
-
-@mixin CardHeader{
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-}
-
-@mixin BtnFont {
-  font-weight: 600;
-  font-size: $base;
-  line-height: 21px;
-  color: $font-clr--dark;
-  font-family: $font-family;
 }
 
 .blob {
@@ -59,13 +34,19 @@ body {
   }
   &__vector--left {
     left: 0;
-    top: calc($base * 27)
+    top: calc($base * 27);
   }
   &__blob--large {
     right: 0;
-    top: calc($base * 97)
+    top: calc($base * 97);
   }
-
 }
 
-
+@media screen and (max-width: 700px) {
+  body main .content {
+    display: block !important;
+  }
+  .blob {
+    display: none;
+  }
+}

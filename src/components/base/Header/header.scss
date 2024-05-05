@@ -1,25 +1,57 @@
-@import "../../../styles/main.scss";
+@import '../../../styles/variables.scss';
 
 header {
   display: flex;
-  padding: calc($base*1.5) calc($base*2);
+  padding: calc($base * 1.5) calc($base * 2);
   justify-content: space-between;
   align-items: center;
   nav {
     a {
-      padding-inline: calc($base*2);
+      padding-inline: calc($base * 2);
       text-decoration: none;
       color: $font-clr--dark;
       font-weight: 600;
+      &:hover {
+        font-weight: 900;
+      }
     }
     button {
       background-color: $clr-turquoise;
       color: $clr-light;
-      padding: calc($base*0.625) $base;
+      padding: calc($base * 0.625) $base;
       border: none;
       border-radius: 6px;
       font-family: $font-family;
       font-weight: 600;
+      &:hover {
+        font-weight: 900;
+      }
+    }
+  }
+
+  .mobile-nav {
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    a {
+      color: $clr-light;
+    }
+    svg {
+      padding-inline: calc($base * 2);
+      width: 2rem;
+      height: 2rem;
+      color: $clr-light;
+      cursor: pointer;
+      &:hover {
+        color: $clr-pink;
+      }
+    }
+    button {
+      border: 1px solid $clr-light;
     }
   }
 }

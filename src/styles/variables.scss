@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+$font-family: 'Playfair Display', serif;
+$font-family2: 'Source Sans', sans-serif;
+$font-clr--dark: #031619;
+$clr-turquoise: #23abbc;
+$clr-light: #f7f9ff;
+$clr-pink: #ffe5e5;
+$base: 1rem;
+
+@mixin H1font {
+  font-weight: 400;
+  font-size: $base * 6;
+  line-height: 128px;
+  letter-spacing: 0.08em;
+}
+
+@mixin H2font {
+  font-weight: 500;
+  font-size: $base * 4;
+  line-height: 100px;
+  letter-spacing: 0.05em;
+}
+
+@mixin CardHeader {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+@mixin BtnFont {
+  font-weight: 600;
+  font-size: $base;
+  line-height: 21px;
+  color: $font-clr--dark;
+  font-family: $font-family;
+}

@@ -7,7 +7,8 @@ import { Quotes } from './components/quotesSection';
 import { Testimonial } from './components/testimonialSection';
 import { Skills } from './components/skillsSection';
 
-export const Start = () => {
+export const Start = ({ setIsHomePage }) => {
+  setIsHomePage(true);
   return (
     <main>
       <Hero />{' '}

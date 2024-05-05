@@ -3,16 +3,14 @@ import VectorRight from './blobs/VectorRight';
 import VectorThin from './blobs/VectorThin';
 import BlobLarge from './blobs/BlobLarge';
 import './main.scss';
-import { useState } from 'react';
 
-export default function Layout({ children }) {
-  const [isHomepage, setIsHomepage] = useState(true);
+export default function Layout({ children, isHomePage }) {
   return (
     <section>
-      {isHomepage ? <VectorRight /> : <VectorThin />}
-      <VectorLeft />
+      {isHomePage ? <VectorRight /> : <VectorThin />}
+      {isHomePage && <VectorLeft />}
       {children}
-      <BlobLarge />
+      {isHomePage && <BlobLarge />}
     </section>
   );
 }
