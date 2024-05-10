@@ -10,22 +10,28 @@ export const EduCards = () => {
         subheading="Yrkeshögskola Folkuniversitetet 2022-2024"
       >
         <p className="card__text">
-          Innehåll: HTML, CSS, JavaScript, React, Node.js, Cloud (AWS), Agilt
-          abete, UX/UI m.m. Distans. Heltid.
+          I utbildningen Frontendutvecklare från Folkuniversitetet har jag bland
+          annat fått kunskaper inom HTML/CSS, JavaScript, UX/UI, React, Node.js,
+          moln(AWS), par/mob programmering, Git och Github samt Agilt arbete.
+          Genom mina LIA-perioder har jag fått erfarenhet inom till exempel
+          React, sass, Vue.js och Primevue.Utbildningen har gått på heltid och
+          genomförts på distans och har till stor del byggt på samarbete genom
+          gemensamma projekt, som kompletterats med individuella examinationer
+          för att säkerställa kunskapsnivån hos de studerande. Under
+          utbildningen har jag varit studeranderepresentant för klassen och på
+          så vis varit en del av ledningsgruppen för utbildningen.
         </p>
         <section className="card__btns">
-          <ReadMore onClick={() => console.log('clicked read more')}>
-            GitHub
-          </ReadMore>
-
-          <ReadMore onClick={() => console.log('clicked read more')}>
+          <ReadMore link={'https://github.com/akickia'}>GitHub</ReadMore>
+          <ReadMore
+            link={
+              'https://www.folkuniversitetet.se/vara-skolor/yh-utbildningar/alla-yh-utbildningar/it-data/frontendutvecklare-distans/'
+            }
+          >
             Folkuniversitetet
           </ReadMore>
-        </section>
-        <section className="card__btns">
-          <ReadMore onClick={() => console.log('clicked read more')}>
-            Mina projekt
-          </ReadMore>
+
+          <ReadMore link={'https://lindstrand.tech'}>Mina projekt</ReadMore>
         </section>
       </Card>
       <Card
@@ -33,18 +39,25 @@ export const EduCards = () => {
         subheading="Sundsgårdens folkhögskola vt2022"
       >
         <p className="card__text">
-          Intensivutbildning på 22 veckor till frontendutvecklare. Innehåll:
-          basic HTML, CSS, JavaScript, React, Agilt abete m.m. Undervisning på
-          Engelska. Distans. Heltid.
+          Intensivutbildning på 22 veckor till frontendutvecklare. Individuellt
+          arbete såväl som projekt i grupp och en bra introduktion till git
+          flow. Innehåll: basic HTML, CSS, JavaScript, React, Agilt abete m.m.
+          Undervisning på Engelska. Distans. Heltid.
         </p>
         <section className="card__btns">
-          <ReadMore onClick={() => console.log('clicked read more')}>
+          <ReadMore
+            link={
+              'https://sundsgarden.se/utbildningar-kurser/langa-kurser/distanskurser/it-tech-for-women/'
+            }
+          >
             Till Sundsgården
           </ReadMore>
         </section>
       </Card>
       <section className="special">
-        <button>Ladda ner mitt CV i pdf här!</button>
+        <a href="./CV.pdf" download>
+          Ladda ner mitt CV i pdf här!
+        </a>
       </section>
       <Card
         title="Diverse kurser"

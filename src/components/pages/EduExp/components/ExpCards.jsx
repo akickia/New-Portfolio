@@ -6,19 +6,20 @@ import { Contact } from '../../../base/Contact/contact';
 export const ExpCards = () => {
   return (
     <>
-      <Card title="Teachiq" subheading="Lia 2, 10 veckor vt 2024">
+      <Card
+        title="Teachiq / Kunskapsmatrisen"
+        subheading="Lia 2, 10 veckor vt 2024"
+      >
         <p className="card__text">
           Arbetade skarpt i befintligt team (frontend, backend, design) med
-          uppdatering av en av företagets produkter. Skarpa lösningar som idag
+          uppdatering av produkten Kunskapsmatrisen. Skarpa lösningar som idag
           finns i produktion. En mycket lärorik process att arbeta i befintligt
           professionellt team och allt vad det innebär med workflow, git, fork,
           backend, testmiljöer m.m. Arbetade med Vue.js, TypeScript, Sass,
           PrimeVue, axios, Pinia m.m. Hybrid. Heltid.
         </p>
         <section className="card__btns">
-          <ReadMore onClick={() => console.log('clicked read more')}>
-            Till Teachiq
-          </ReadMore>
+          <ReadMore link={'https://km.se/'}>Till Kunskapsmatrisen</ReadMore>
         </section>
       </Card>
       <Card title="Zocom" subheading="Lia 1, 9 veckor vt 2024">
@@ -28,9 +29,7 @@ export const ExpCards = () => {
           TypeScript, Zustand, axios, Tanstack m.m. Distans. Heltid.
         </p>
         <section className="card__btns">
-          <ReadMore onClick={() => console.log('clicked read more')}>
-            Till ZoCom
-          </ReadMore>
+          <ReadMore link={'https://www.zocom.com/'}>Till ZoCom</ReadMore>
         </section>
       </Card>
       <Card
@@ -44,7 +43,11 @@ export const ExpCards = () => {
           engelska. Distans. Deltid.
         </p>
         <section className="card__btns">
-          <ReadMore onClick={() => console.log('clicked read more')}>
+          <ReadMore
+            link={
+              'https://sundsgarden.se/utbildningar-kurser/langa-kurser/distanskurser/it-tech-for-women/'
+            }
+          >
             Till Sundsgården
           </ReadMore>
         </section>

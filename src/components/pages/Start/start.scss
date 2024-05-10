@@ -44,15 +44,22 @@
     margin: auto;
   }
 }
+.testamonial-card {
+  grid-column: span 3;
+}
 
 @media screen and (max-width: 700px) {
-  .hero__title {
-    font-size: $base * 3.5;
-  }
-  .hero__subtitle {
-    grid-template-columns: 1fr;
-    h3 {
-      font-size: calc($base * 1.75);
+  .hero {
+    max-width: 90%;
+    margin: auto;
+    &__title {
+      font-size: $base * 3.5;
+    }
+    &__subtitle {
+      grid-template-columns: 1fr;
+      h3 {
+        font-size: calc($base * 1.75);
+      }
     }
   }
 }

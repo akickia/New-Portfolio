@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Heading } from '../../base/Heading/heading';
 import { EduCards } from './components/EduCards';
 import './eduExp.scss';
 import { ExpCards } from './components/ExpCards';
 
 export const EduExp = ({ setIsHomePage }) => {
-  setIsHomePage(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setIsHomePage(false);
+  }, []);
   return (
     <main className="edu-exp">
       <div className="content">

@@ -24,6 +24,13 @@ export const Footer = () => {
         </ReadMore>
         <ReadMore link={'http://lindstrand.tech'}>Lindstrand.tech</ReadMore>
       </nav>
+      <a
+        className="credit"
+        href="https://cecilialjungquist.github.io/min-portfolio/"
+        target="_blank"
+      >
+        Stort tack till Cecilia Ljungquist för hjälp med design &hearts;
+      </a>
     </footer>
   );
 };

@@ -22,4 +22,17 @@
     width: 100%;
     padding-block: calc($base * 2);
   }
+  .credit {
+    text-decoration: none;
+    color: $font-clr--dark;
+  }
+  .credit:hover {
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer .credit {
+    font-size: calc($base * 0.85);
+  }
 }

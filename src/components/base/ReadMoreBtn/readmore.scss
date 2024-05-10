@@ -2,8 +2,8 @@
 
 .readmore {
   background-color: $clr-pink;
-  width: 60px;
-  height: 45px;
+  width: 66px;
+  height: 46px;
   border-radius: 50%;
   border: none;
   display: flex;
@@ -11,9 +11,12 @@
   justify-content: end;
   margin-top: auto;
   margin-left: auto;
+  position: relative;
   cursor: pointer;
   p {
-    transform: translateX(-25%);
+    position: absolute;
+    right: 26px;
+    top: 12px;
     @include BtnFont;
     white-space: nowrap;
   }
@@ -21,13 +24,17 @@
     text-decoration: none;
   }
 }
+.readmore:hover {
+  transform: scale(1.05);
+}
 
 @media screen and (max-width: 700px) {
   .readmore {
     width: 45px;
     height: 30px;
-  }
-  .readmore p {
-    font-size: calc($base * 0.75);
+    p {
+      font-size: calc($base * 0.75);
+      top: 5px;
+    }
   }
 }

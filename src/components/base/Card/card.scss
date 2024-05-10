@@ -8,6 +8,7 @@
   display: grid;
   gap: 32px;
   height: fit-content;
+  border-radius: 4px;
   ul {
     text-align: left;
     justify-self: left;
@@ -34,8 +35,10 @@
 
   &__btns {
     display: flex;
-    justify-content: space-around;
-    gap: calc($base * 1.625);
+    flex-wrap: wrap;
+    justify-self: flex-end;
+    column-gap: calc($base * 6.25);
+    row-gap: $base;
   }
 }
 

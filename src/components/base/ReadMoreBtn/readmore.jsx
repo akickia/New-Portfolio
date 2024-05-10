@@ -6,7 +6,7 @@ export const ReadMore = ({ onClick, children, link }) => {
     <>
       {link ? (
         <button className="readmore">
-          <a href={link}>
+          <a href={link} target="_blank">
             <p>{children}</p>
           </a>
         </button>

@@ -2,11 +2,14 @@ import { Heading } from '../../base/Heading/heading';
 import { Contact } from '../../base/Contact/contact';
 import { Card } from '../../base/Card/card';
 import { ReadMore } from '../../base/ReadMoreBtn/readmore';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './about.scss';
 
 export const About = ({ setIsHomePage }) => {
-  setIsHomePage(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setIsHomePage(false);
+  }, []);
   const [showMoreWork, setShowMoreWork] = useState(false);
   const [showMoreHome, setShowMoreHome] = useState(false);
   const [showMoreCode, setShowMoreCode] = useState(false);
@@ -156,7 +159,7 @@ export const About = ({ setIsHomePage }) => {
                 att inte ha för många pågående projekt eller alltför mycket
                 planerat. Jag älskar att lägga stora pussel, göra korsord eller
                 läsa en bra bok. En film eller skogspromenad med familjen är
-                också trevligt. I juni 2022 växte familjen då vår pudelvalp
+                också trevligt. I juni 2022 växte familjen då vår storpudel
                 Sixten flyttade in, och han ger och mycket glädje och mys.
               </p>
               <p>
@@ -170,7 +173,7 @@ export const About = ({ setIsHomePage }) => {
                 noggrann och ser till detaljer och "clean code".
               </p>
               <p>
-                Med tre barn och en valp så krävs mycket logistik för att få
+                Med tre barn och en hund så krävs mycket logistik för att få
                 vardagen att gå ihop, och att studera på distans underlättar.
                 Jag kan planera mina timmar så att jag kan delta i barnens
                 aktiviteteter, gå ut med hunden, och ändå ha tillräckligt med
@@ -251,9 +254,10 @@ export const About = ({ setIsHomePage }) => {
               <p>
                 Jag är i högsta grad fortfarande en junior, men om jag ser
                 tillbaka på allt jag lärt mig så har jag kommit en bra bit på
-                vägen. Hittills har jag fått kunskaper i HTML, CSS, JavaScript
-                och React, samt grundläggande kunskaper i agilt arbete och
-                UX/UI. Jag kan använda Sass, Figma, Git/Github med mera.
+                vägen. Hittills har jag fått kunskaper i HTML, CSS, JavaScript,
+                React, node.js, aws, och vue.js samt grundläggande kunskaper i
+                agilt arbete och UX/UI. Jag kan använda Sass, Figma, Git/Github
+                med mera.
               </p>
               <p>
                 Jag har deltagit/slutfört onlinekurser i HTML/CSS, JavaScript,
@@ -263,7 +267,7 @@ export const About = ({ setIsHomePage }) => {
               <p>
                 Jag vet att jag har SÅÅÅ mycket kvar att lära, men jag börjar
                 kunna se samband och förstå hur webapplikationer, hemsidor och
-                system kan skapar. Jag tycker det är roligt att hitta på nya
+                system kan skapas. Jag tycker det är roligt att hitta på nya
                 projekt att genomföra och se dem få liv och bli mer interaktiva
                 vartefter mina kunskaper växer.
               </p>

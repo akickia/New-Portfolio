@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
   background: linear-gradient(180deg, #23abbc 0%, #b3eff7 100%);
   position: relative;
@@ -17,6 +22,8 @@ body {
   main {
     .content {
       max-width: 1040px;
+      width: 100%;
+      overflow-x: hidden;
       margin: auto;
       padding: $base;
       display: grid;

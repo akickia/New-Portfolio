@@ -35,15 +35,21 @@
     grid-column: span 6;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    button {
+    a {
       grid-column: span 1;
       margin: auto;
       background-color: $clr-pink;
+      color: $font-clr--dark;
+      text-decoration: none;
+      border-radius: 4px;
       padding: calc($base/2) $base;
       border: none;
       box-shadow: 1px 1px 5px $font-clr--dark;
       font-family: $font-family;
       font-weight: 700;
+    }
+    a:hover {
+      transform: scale(1.05);
     }
   }
 }

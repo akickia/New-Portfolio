@@ -21,4 +21,17 @@
     width: calc($base * 4);
     height: calc($base * 4);
   }
+  *:hover {
+    color: $clr-turquoise;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contact.vertical {
+    grid-template-columns: repeat(3, 1fr);
+    * {
+      width: calc($base * 3);
+      height: calc($base * 3);
+    }
+  }
 }

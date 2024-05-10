@@ -26,3 +26,9 @@
     }
   }
 }
+
+@media screen and (max-width: 700px) {
+  .projects .contact {
+    display: none;
+  }
+}
