@@ -3,6 +3,7 @@ import { Heading } from '../../base/Heading/heading';
 import { EduCards } from './components/EduCards';
 import './eduExp.scss';
 import { ExpCards } from './components/ExpCards';
+import { Doodle } from '../../base/Doodle/doodle';
 
 export const EduExp = ({ setIsHomePage }) => {
   useEffect(() => {
@@ -17,7 +18,7 @@ export const EduExp = ({ setIsHomePage }) => {
       <article className="content content-top">
         <EduCards />
       </article>
-      <img className="doodle" src="./doodle.svg"></img>
+      <Doodle />
       <article className="content content-bottom">
         <ExpCards />
       </article>

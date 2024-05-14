@@ -4,6 +4,7 @@ import { Card } from '../../base/Card/card';
 import { ReadMore } from '../../base/ReadMoreBtn/readmore';
 import { useEffect, useState } from 'react';
 import './about.scss';
+import { Doodle } from '../../base/Doodle/doodle';
 
 export const About = ({ setIsHomePage }) => {
   useEffect(() => {
@@ -78,7 +79,7 @@ export const About = ({ setIsHomePage }) => {
           </ul>
         </Card>
       </article>
-      <img className="doodle" src="./doodle.svg"></img>
+      <Doodle />
       <article className="content content-bottom">
         <Card
           title={'På arbetet'}
