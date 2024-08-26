@@ -14,7 +14,7 @@ export const EduCards = () => {
           annat fått kunskaper inom HTML/CSS, JavaScript, UX/UI, React, Node.js,
           moln(AWS), par/mob programmering, Git och Github samt Agilt arbete.
           Genom mina LIA-perioder har jag fått erfarenhet inom till exempel
-          React, sass, Vue.js och Primevue.Utbildningen har gått på heltid och
+          React, sass, Vue.js och Primevue. Utbildningen har gått på heltid och
           genomförts på distans och har till stor del byggt på samarbete genom
           gemensamma projekt, som kompletterats med individuella examinationer
           för att säkerställa kunskapsnivån hos de studerande. Under
@@ -65,8 +65,8 @@ export const EduCards = () => {
       >
         <p className="card__text">
           Diverse kurser online för att öka min kunskap. Programmering 1 läste
-          jag parallellt med Tech for women mars - maj 2022 av behörighetsskäl,
-          betyg B. Udemy och Scrimbakurserna är pågående. Distans.
+          jag parallellt med Tech for women mars - maj 2022, betyg B. Udemy och
+          Scrimbakurserna är pågående. Distans.
         </p>
       </Card>
       <Card title="Lärarutbildning" subheading="Örebro universitet 2004-2010">

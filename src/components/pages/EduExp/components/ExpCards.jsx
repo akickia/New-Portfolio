@@ -12,11 +12,10 @@ export const ExpCards = () => {
       >
         <p className="card__text">
           Arbetade skarpt i befintligt team (frontend, backend, design) med
-          uppdatering av produkten Kunskapsmatrisen. Skarpa lösningar som idag
-          finns i produktion. En mycket lärorik process att arbeta i befintligt
-          professionellt team och allt vad det innebär med workflow, git, fork,
-          backend, testmiljöer m.m. Arbetade med Vue.js, TypeScript, Sass,
-          PrimeVue, axios, Pinia m.m. Hybrid. Heltid.
+          uppdatering av produkten Kunskapsmatrisen. En mycket lärorik process
+          att arbeta i befintligt professionellt team och allt vad det innebär
+          med workflow, git, fork, backend, testmiljöer m.m. Arbetade med
+          Vue.js, TypeScript, Sass, PrimeVue, axios, Pinia m.m. Hybrid. Heltid.
         </p>
         <section className="card__btns">
           <ReadMore link={'https://km.se/'}>Till Kunskapsmatrisen</ReadMore>
@@ -25,8 +24,10 @@ export const ExpCards = () => {
       <Card title="Zocom" subheading="Lia 1, 9 veckor vt 2024">
         <p className="card__text">
           Arbetade agilt i team i skarpa projekt och utvecklade bland annat en
-          frontendlösning till en av företagets tjänster. Arbetade med React,
-          TypeScript, Zustand, axios, Tanstack m.m. Distans. Heltid.
+          frontendlösning till en av företagets tjänster. Lärde mig mycket om
+          att arbeta i team utifrån mål från produktägare och processen kring
+          detta. Arbetade med React, TypeScript, Zustand, axios, Tanstack m.m.
+          Distans. Heltid.
         </p>
         <section className="card__btns">
           <ReadMore link={'https://www.zocom.com/'}>Till ZoCom</ReadMore>
@@ -37,10 +38,11 @@ export const ExpCards = () => {
         subheading="Sundsgårdens folkhögskola 2022-2024"
       >
         <p className="card__text">
-          Assisterar lärare med att ge feedback på uppgifter samt erbjuder
+          Assisterade lärare med att ge feedback på uppgifter samt erbjöd
           studenter hjälp och handledning i mån av tid. Studenterna lär sig
-          basic HTML/CSS/JavaScript/React under 22 veckor. Undervisning på
-          engelska. Distans. Deltid.
+          basic HTML/CSS/JavaScript/React under 22 veckor. Oerhört värdefullt
+          för min egen förståelse att förklara och hjälpa andra och har
+          fördjupat mina kunskaper. Undervisning på engelska. Distans. Deltid.
         </p>
         <section className="card__btns">
           <ReadMore
@@ -68,7 +70,8 @@ export const ExpCards = () => {
         <ul>
           <li>Förskoleupproret - för bättre arbetsvilkor i förskolan</li>
           <li>
-            Fli!cka - om sociala normer och ideal genom Socialdepartementet
+            Fli!cka - om källkritik, normer och ideal inom media genom
+            Socialdepartementet
           </li>
           <li>
             Svenska för baby - föräldraträffar i syfte att skapa integrerande

@@ -6,9 +6,37 @@ export const Testimonial = () => {
     <>
       <Card title="Referenser" line="line" classname="huge">
         <article className="content">
+          <Card title="Set Norman" subheading="Team Lead at Teachiq 2024">
+            <p>
+              Kicki worked in my team as a frontend developer and was completely
+              new to Vue 3. She quickly got up to speed and became productive in
+              this new environment. During her time with us, Kicki consistently
+              took on new challenges and solved increasingly difficult tasks.
+              She worked very independently and communicated continuously with
+              other developers in a proactive manner to ensure a good final
+              result. She also effectively built insights about EdTech, our
+              company, and our users to deliver even more accurate work. I
+              highly recommend Kicki as she is a developer with great potential
+              and good insights, and I hope to work with her again.
+            </p>
+          </Card>
+          <Card
+            title="Cecilia Ljungquist"
+            subheading="Student Frontendutvecklare YH 2022-2024"
+          >
+            <p>
+              Kicki är en fantastisk klasskamrat. Hon är alltid hjälpsam och har
+              en nyfikenhet som ofta leder till intressanta diskussioner och
+              lösningar. Kicki är ordningssam och driven, vilket hon verkligen
+              har visat genom sitt arbete som klassrepresentant. Jag hoppas och
+              ser fram emot att möta henne ute på kommande arbetsplatser som en
+              kompetent utvecklare och kollega!
+            </p>
+          </Card>
           <Card
             title="Michelle Andersson"
             subheading="Kursföreståndare IT-kurser, Sundsgården 2022-2024"
+            classname={'huge'}
           >
             <p>
               Kicki has been working as my teaching assistant for the courses
@@ -37,37 +65,6 @@ export const Testimonial = () => {
               will continue for a long time.
             </p>
           </Card>
-          <div className="testamonial-card">
-            <Card
-              title="Cecilia Ljungquist"
-              subheading="Student Frontendutvecklare YH 2022-2024"
-            >
-              <p>
-                Kicki är en fantastisk klasskamrat. Hon är alltid hjälpsam och
-                har en nyfikenhet som ofta leder till intressanta diskussioner
-                och lösningar. Kicki är ordningssam och driven, vilket hon
-                verkligen har visat genom sitt arbete som klassrepresentant. Jag
-                hoppas och ser fram emot att möta henne ute på kommande
-                arbetsplatser som en kompetent utvecklare och kollega!
-              </p>
-            </Card>
-            <Card
-              title="Adam Sjödin"
-              subheading="Student Frontendutvecklare YH 2022-2024"
-            >
-              <p>
-                Att ha Kicki i sin klass är nog det bästa som kunde hänt en.
-                Eftersom vi pluggar på distans så har vi inte alltid tillgång
-                till vår lärare. Då går jag oftast till Kicki när jag behöver
-                hjälp eftersom hon alltid är tillgänglig och villig att hjälpa
-                till. Hon är väldigt duktig på att programmera, pedagogisk och
-                är alltid peppande! Hon har även lätt för att sätta sig in i kod
-                som hon inte skrivit själv, vilket är svårt för många. Är redan
-                nu avundsjuk på hennes framtida kollegor som ska jobba med
-                henne!
-              </p>
-            </Card>
-          </div>
           <Card
             title="Kamala Lundin"
             subheading="Student Frontendutvecklare YH 2022-2024"
@@ -80,6 +77,21 @@ export const Testimonial = () => {
               har hon en förmåga att förutse eventuella problem så att det blir
               lättare att hitta lösningar tidigt i processen. Kicki tar det där
               extra steget för att vara till hjälp för dem omkring henne.
+            </p>
+          </Card>
+          <Card
+            title="Adam Sjödin"
+            subheading="Student Frontendutvecklare YH 2022-2024"
+          >
+            <p>
+              Att ha Kicki i sin klass är nog det bästa som kunde hänt en.
+              Eftersom vi pluggar på distans så har vi inte alltid tillgång till
+              vår lärare. Då går jag oftast till Kicki när jag behöver hjälp
+              eftersom hon alltid är tillgänglig och villig att hjälpa till. Hon
+              är väldigt duktig på att programmera, pedagogisk och är alltid
+              peppande! Hon har även lätt för att sätta sig in i kod som hon
+              inte skrivit själv, vilket är svårt för många. Är redan nu
+              avundsjuk på hennes framtida kollegor som ska jobba med henne!
             </p>
           </Card>
         </article>

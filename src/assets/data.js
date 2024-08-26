@@ -11,13 +11,13 @@ export const projects = [
   },
   {
     id: 8,
-    title: 'VeraCare',
+    title: 'Holistic Mind Strängnäs',
     subheading: 'examensarbete, mars 2024',
-    text: 'Från början kodad som eget projekt med grundläggande HTML/Sass och en     aning JavaScript. Våren 2024 migrerad till React samt skapat backend på AWS med möjlighet för kunden att uppdatera tjänster och nyheter själv via administratörssida. Tekniker: React, Sass, DynamoDB, serverless webpack, axios, S3 Bucket, APIGateway. Betyg: VG.',
+    text: 'Från början kodad som eget projekt med grundläggande HTML/Sass och en aning JavaScript. Våren 2024 migrerad till React samt skapat backend på AWS med möjlighet för kunden att uppdatera tjänster och nyheter själv via administratörssida. Tekniker: React, Sass, DynamoDB, serverless webpack, axios, S3 Bucket, APIGateway. Sommar 2024 byte av hostingtjänst och namn från VeraCare till Holistic Mind Strängnäs. Betyg: VG.',
     link1: 'Github',
     adr1: 'https://github.com/akickia/veracare_2.0',
     link2: 'Länk till demo',
-    adr2: 'https://veracare.se/',
+    adr2: 'https://holistic-mind-strangnas.netlify.app/',
   },
   {
     id: 7,
