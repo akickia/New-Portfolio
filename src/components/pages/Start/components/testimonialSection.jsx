@@ -21,16 +21,19 @@ export const Testimonial = () => {
             </p>
           </Card>
           <Card
-            title="Cecilia Ljungquist"
-            subheading="Student Frontendutvecklare YH 2022-2024"
+            title="Christoffer Wallenberg"
+            subheading="Lärare och handledare ZoCom 2024"
           >
             <p>
-              Kicki är en fantastisk klasskamrat. Hon är alltid hjälpsam och har
-              en nyfikenhet som ofta leder till intressanta diskussioner och
-              lösningar. Kicki är ordningssam och driven, vilket hon verkligen
-              har visat genom sitt arbete som klassrepresentant. Jag hoppas och
-              ser fram emot att möta henne ute på kommande arbetsplatser som en
-              kompetent utvecklare och kollega!
+              Under sin utbildning visade Kicki prov på sitt engagemang för
+              studierna inte bara som studeranderepresentant utan även för sina
+              klasskamrater då hon ofta fanns där för att hjälpa till. Under sin
+              första LIA hos oss på ZoCom så var hon ambitiös, driven, ödmjuk
+              till det hon inte kunde men såg till att hon lärde sig. Var mån av
+              att bygga bra produkter och såg till att hon förstod vad hon
+              skulle göra genom att ställa frågor men även komma med
+              förbättringsförslag. Rekommenderar Kicki till er som vill ha en
+              ambitiös och driven utvecklare med en hunger för att lära sig.
             </p>
           </Card>
           <Card
@@ -66,6 +69,19 @@ export const Testimonial = () => {
             </p>
           </Card>
           <Card
+            title="Cecilia Ljungquist"
+            subheading="Student Frontendutvecklare YH 2022-2024"
+          >
+            <p>
+              Kicki är en fantastisk klasskamrat. Hon är alltid hjälpsam och har
+              en nyfikenhet som ofta leder till intressanta diskussioner och
+              lösningar. Kicki är ordningssam och driven, vilket hon verkligen
+              har visat genom sitt arbete som klassrepresentant. Jag hoppas och
+              ser fram emot att möta henne ute på kommande arbetsplatser som en
+              kompetent utvecklare och kollega!
+            </p>
+          </Card>
+          <Card
             title="Kamala Lundin"
             subheading="Student Frontendutvecklare YH 2022-2024"
           >
@@ -82,6 +98,7 @@ export const Testimonial = () => {
           <Card
             title="Adam Sjödin"
             subheading="Student Frontendutvecklare YH 2022-2024"
+            classname={'huge'}
           >
             <p>
               Att ha Kicki i sin klass är nog det bästa som kunde hänt en.

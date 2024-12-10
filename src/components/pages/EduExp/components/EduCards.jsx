@@ -59,14 +59,28 @@ export const EduCards = () => {
           Ladda ner mitt CV i pdf här!
         </a>
       </section>
+      <Card title="Programmering 1" subheading="Hermods mars - maj 2022">
+        <p className="card__text">
+          Gymnasienivå för att bli behörig till utbildning. Python. Läste
+          parallellt med Tech for women mars - maj 2022, betyg B. Distans.
+        </p>
+      </Card>
       <Card
-        title="Diverse kurser"
-        subheading="Programmering 1 (Hermods), Udemy, Scrimba m.m."
+        title="Learn JavaScript + Learn TypeScript"
+        subheading="Scrimba 2023-2024"
       >
         <p className="card__text">
-          Diverse kurser online för att öka min kunskap. Programmering 1 läste
-          jag parallellt med Tech for women mars - maj 2022, betyg B. Udemy och
-          Scrimbakurserna är pågående. Distans.
+          Två kurser via Scrimba för att förbättra och fördjupa mina kunskaper
+          om JavaScript och TypeScript. Avslutade hösten 2024. Distans.
+        </p>
+      </Card>
+      <Card
+        title="React front to back + 50 projects in 50 days"
+        subheading="Udemy 2022 - 2024"
+      >
+        <p className="card__text">
+          Två kurser för att förbättra och fördjupa mina kunskaper om React och
+          HTML/CSS/JavaScript. Pågående. Distans.
         </p>
       </Card>
       <Card title="Lärarutbildning" subheading="Örebro universitet 2004-2010">
