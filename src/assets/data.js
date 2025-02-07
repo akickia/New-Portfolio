@@ -6,8 +6,6 @@ export const projects = [
     text: 'Idé till hemsida som svarar på frågor om den svenska förskolan, riktad till föräldrar. Under utveckling. Tekniker: React, TypeScript',
     link1: 'Github',
     adr1: 'https://github.com/akickia/pedagog',
-    link2: 'Länk till demo',
-    adr2: 'https://akickia-fragapedagogen.netlify.app/',
   },
   {
     id: 10,
